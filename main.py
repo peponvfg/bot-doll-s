@@ -47,7 +47,7 @@ def save_json_file(path,data):
     except: pass
 OWNER_MAP=load_guild_map(OWNER_FILE); MIBEBE_MAP=load_guild_map(MIBEBE_FILE); WHITELIST_PINGS_MAP=load_guild_map(WHITELIST_PINGS_FILE); WHITELIST_ROLES_MAP=load_guild_map(WHITELIST_ROLES_FILE); IMMUNE_ROLES_MAP=load_guild_map(ROLE_IMMUNE_FILE); BOTS_MAP=load_guild_map(BOTS_FILE)
 intents=discord.Intents.default(); intents.message_content=True; intents.members=True; intents.guilds=True; intents.presences=True; intents.voice_states=True
-bot=commands.Bot(command_prefix="_",intents=intents,help_command=None,case_insensitive=True)
+bot=commands.Bot(command_prefix=".",intents=intents,help_command=None,case_insensitive=True)
 immune_members_cache={}
 # 🎀 COLORES TIERNA - Rosa & Blanco
 ROSA = 0xFFB6D9
